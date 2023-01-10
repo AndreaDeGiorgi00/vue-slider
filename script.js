@@ -56,6 +56,10 @@ const app = Vue.createApp({
             }else{
                 this.currentIndex -= 1
             }
+        },
+        changePic(n){
+            //voglio far semplicemnete cambiare il currentIndex
+            this.currentIndex = n;
         }
     }
 })

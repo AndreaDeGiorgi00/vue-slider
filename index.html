@@ -24,7 +24,7 @@
             
             <i id="prec" @click="arrowUp" class="fa-solid fa-circle-arrow-up"></i>
          
-            <img v-for = "(variabile , i) in bigData" :src="variabile.image"  :class = "[currentIndex == i ? 'active' : '']">
+            <img v-for = "(variabile , i) in bigData" :src="variabile.image"  :class = "[currentIndex == i ? 'active' : '']" @click="changePic(i)">
         
             <i id="next" @click="arrowDown"class="fa-solid fa-circle-arrow-down"></i>
         </div>
