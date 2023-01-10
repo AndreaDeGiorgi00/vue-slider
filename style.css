@@ -22,9 +22,7 @@ img{
     width: 100%;
     object-fit: cover;
 }
-.immagine img{
-    display: none;
-}
+
 .immagine .active{
     display: block;
 }
@@ -44,15 +42,19 @@ i{
 }
 
 .carosello img{
-    max-height: calc(100% / 5);
+    max-height: calc(100% / 5 - 10px);
+    filter: grayscale(100%);
 }
-
+.carosello img.active{
+    filter: grayscale(0%);
+}
 
 #prec{
     position:absolute;
     top: 0;
     right: 50%;
     transform: translate(50%);
+    z-index: 2;
 }
 
 
@@ -61,4 +63,5 @@ i{
     bottom: 0;
     right: 50%;
     transform: translate(50%);
+    z-index: 2;
 }
